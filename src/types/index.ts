@@ -23,6 +23,7 @@ export interface Product {
   warehouseId?: number;
   warehousemanId?: string;
   supplier: string;
+  status?: 'out_of_stock' | 'low_stock' | 'in_stock';
 }
 
 export interface Stock {

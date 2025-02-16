@@ -78,7 +78,7 @@ class ProductService {
       await this.updateStatistics('update', product);
       
       return true;
-    } catch (error) {
+    } catch (error: any) {
       throw new Error(error.response?.data?.message || 'Erreur lors de la mise à jour de la quantité');
     }
   }
